@@ -13,7 +13,7 @@ chromadb==0.5.5
 
 # ── Embeddings ────────────────────────────────────────────
 sentence-transformers==3.0.1
-torch==2.4.1
+# torch se instala desde Dockerfile version CPU-only (sin CUDA)
 
 # ── Utilidades ────────────────────────────────────────────
 pydantic==2.9.2
