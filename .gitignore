@@ -1,0 +1,48 @@
+# ── Dependencias ──────────────────────────────────────────
+node_modules/
+__pycache__/
+*.pyc
+.pyo
+.venv/
+venv/
+env/
+
+# ── Variables de entorno ──────────────────────────────────
+.env
+.env.local
+.env.production
+
+# ── Base de datos local ──────────────────────────────────
+*.sqlite3
+chroma_data/
+postgres_data/
+
+# ── Build ────────────────────────────────────────────────
+frontend/.next/
+frontend/out/
+frontend/build/
+backend/dist/
+
+# ── IDE ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS ───────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Logs ─────────────────────────────────────────────────
+*.log
+logs/
+
+# ── SSL ──────────────────────────────────────────────────
+nginx/ssl/*.pem
+nginx/ssl/*.key
+
+# ── Coverage ─────────────────────────────────────────────
+htmlcov/
+.coverage
+coverage.xml

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "comparativa_gamas_entrada_vs_media_vs_alta",
+    "content": "COMPARATIVA DE GAMAS — Escáneres TodoMovil.\n\nGAMA ENTRADA (CRP239 $450K / TopScan Pro $350K):\n- 4 sistemas: Motor, Transmisión, ABS, SRS\n- Funciones especiales básicas: Reset aceite, EPB\n- NO cubren: BSI, Dirección, Carrocería, Chasis, Confort, Infotainment\n- IMMO: AMARILLO (CRP239 lee estado, no programa) / No disponible (TopScan Pro)\n- Público: Mecánico general, taller básico, uso personal\n\nGAMA MEDIA (MX900 $650K):\n- 7 sistemas: Motor, Transmisión, ABS, SRS, Dirección, Carrocería, Chasis\n- +4 funciones especiales: SAS, DPF, BMS, TPMS\n- BSI: Cobertura parcial (lectura)\n- IMMO: AMARILLO (presente pero no confiable)\n- NO bi-direccional\n- Público: Electricista automotor, taller especializado\n\nGAMA ALTA (DS900 $1.2M):\n- 10+ sistemas: Todos los anteriores + Confort, BSI, Infotainment\n- BI-DIRECCIONAL: Pruebas activas reales\n- Coding y Adaptaciones completas\n- BSI: Cobertura completa con coding\n- IMMO: AMARILLO (mejor resultado, aún sin garantía)\n- Público: Servicio técnico profesional, taller de electricidad avanzado",
+    "metadata": {
+      "producto_id": "comparativa",
+      "categoria": "scanner",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": null,
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  }
+]

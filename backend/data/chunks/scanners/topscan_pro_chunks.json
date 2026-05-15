@@ -1,0 +1,68 @@
+[
+  {
+    "id": "topscan_pro_general_info",
+    "content": "TopDon TopScan Pro — Información general. Escáner de gama entrada económica. 4 sistemas: Motor, ABS, SRS, Transmisión. Funciones especiales: Reset aceite, EPB reset. PANTALLA: 2.8 pulgadas (no táctil, botones). CONECTIVIDAD: Bluetooth + app móvil. ACTUALIZACIONES: Gratuitas por 1 año. NO cubre: BSI, Carrocería, Chasis, Confort, Infotainment, Dirección asistida. IMMO: No disponible. Público objetivo: Mecánico independiente, uso personal, diagnóstico básico de bolsillo. VENTAJA: Precio más accesible del mercado, portátil.",
+    "metadata": {
+      "producto_id": "topscan_pro",
+      "categoria": "scanner",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": null,
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "topscan_pro_peugeot_208_motor",
+    "content": "TopDon TopScan Pro — Peugeot 208 (2013–2025) — Sistema: Motor. Lee y borra códigos de falla genéricos y específicos. Datos en tiempo real vía app móvil. Nivel de acceso: interactúa. Cobertura similar a CRP239 para Motor. ADVERTENCIA: Pantalla pequeña, experiencia de usuario limitada vs CRP239.",
+    "metadata": {
+      "producto_id": "topscan_pro",
+      "categoria": "scanner",
+      "marca_vehiculo": "Peugeot",
+      "modelo_vehiculo": "208",
+      "anio_inicio": 2013,
+      "anio_fin": 2025,
+      "sistema": "Motor",
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "topscan_pro_renault_sandero_motor",
+    "content": "TopDon TopScan Pro — Renault Sandero (2007–2025) — Sistema: Motor. Lee y borra códigos de falla. Datos en tiempo real. Cobertura para motorizaciones 1.6 8V/16V, 1.0 Turbo. Nivel de acceso: interactúa.",
+    "metadata": {
+      "producto_id": "topscan_pro",
+      "categoria": "scanner",
+      "marca_vehiculo": "Renault",
+      "modelo_vehiculo": "Sandero",
+      "anio_inicio": 2007,
+      "anio_fin": 2025,
+      "sistema": "Motor",
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "topscan_pro_peugeot_208_bsi",
+    "content": "TopDon TopScan Pro — Peugeot 208 (2013–2025) — Sistema: BSI. NO APLICA — fuera de cobertura de gama. El TopScan Pro no accede al BSI. Para BSI se requiere MX900 o DS900.",
+    "metadata": {
+      "producto_id": "topscan_pro",
+      "categoria": "scanner",
+      "marca_vehiculo": "Peugeot",
+      "modelo_vehiculo": "208",
+      "anio_inicio": 2013,
+      "anio_fin": 2025,
+      "sistema": "BSI",
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "no_aplica"
+    }
+  }
+]

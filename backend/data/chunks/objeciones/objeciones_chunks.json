@@ -1,0 +1,62 @@
+[
+  {
+    "id": "objecion_es_muy_caro",
+    "content": "OBJECIÓN: 'Es muy caro' — RESPUESTA DEL COPILOTO.\nEstrategia: Mostrar ROI (retorno de inversión) específico por gama.\n\nCRP239 ($450K): 'Se paga solo con 3-4 diagnósticos. Un taller cobra $100-150K por diagnóstico completo. En la primera semana ya recuperaste.'\n\nTopScan Pro ($350K): 'Es el más accesible del mercado. Con 2-3 diagnósticos se paga. Y lo tenés en el bolsillo.'\n\nMX900 ($650K): 'La diferencia con el CRP239 son 3 sistemas más y 4 funciones especiales extra. Un solo trabajo de SAS reset o DPF que no podés hacer con el básico ya justifica la diferencia.'\n\nDS900 ($1.2M): 'Es inversión profesional. Un solo trabajo de coding BSI ($200K) o adaptación de inyectores ($150K) cubre la diferencia con el MX900. En un mes de trabajo intensivo se amortiza completo.'\n\nREGLA: NUNCA decir 'es barato'. Siempre hablar de valor y ROI.",
+    "metadata": {
+      "producto_id": "objecion_general",
+      "categoria": "objeciones",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": null,
+      "variante": null,
+      "tipo_fuente": "feedback_vendedor",
+      "certezza": "Media",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "objecion_el_crp239_me_alcanza",
+    "content": "OBJECIÓN: 'El CRP239 me alcanza' — RESPUESTA DEL COPILOTO.\nContexto: Cliente que ya tiene CRP239 o está entre CRP239 y MX900.\n\nSi es mecánico general: 'Si solo usás Motor, ABS, SRS y Transmisión, el CRP239 es perfecto. No necesitás más.'\n\nSi es electricista: 'Te faltan 3 sistemas clave: Dirección (SAS reset), Carrocería y Chasis. En Peugeot y Renault, no poder entrar al BSI parcial te limita. Con el MX900 accedés a esos sistemas y tenés DPF, BMS, TPMS.'\n\nSi trabaja franceses: 'En Peugeot 208/308 y Renault Sandero/Logan, el BSI/UCH es central. El CRP239 no entra. El MX900 te da lectura parcial y el DS900 te da coding completo.'\n\nREGLA: Si el cliente es realmente mecánico general, NO empujar upgrade. Si es electricista o trabaja marcas francesas, SÍ mostrar la limitación real.",
+    "metadata": {
+      "producto_id": "objecion_crp239",
+      "categoria": "objeciones",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": null,
+      "variante": null,
+      "tipo_fuente": "feedback_vendedor",
+      "certezza": "Media",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "objecion_no_necesito_immo",
+    "content": "OBJECIÓN: 'No necesito IMMO' / 'La IMMO no me interesa' — RESPUESTA DEL COPILOTO.\n\nRespuesta correcta: 'Perfecto, la función IMMO no debería ser un factor de decisión. En todos nuestros equipos es AMARILLO — está presente pero no es confiable para todas las marcas. Si necesitás programar llaves, lo correcto es derivar a una cerrajería automotriz especializada con equipo dedicado. Lo que sí te sirve es que el escáner te diga si el inmovilizador está activo como causa de no arranque.'\n\nREGLA: NUNCA usar IMMO como ventaja de venta. Es AMARILLO. Solo mencionar como herramienta de diagnóstico de estado, no de programación.",
+    "metadata": {
+      "producto_id": "objecion_immo",
+      "categoria": "objeciones",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": "IMMO",
+      "variante": null,
+      "tipo_fuente": "feedback_vendedor",
+      "certezza": "Media",
+      "semaforo": "amarillo"
+    }
+  },
+  {
+    "id": "objecion_lo_mas_barato",
+    "content": "OBJECIÓN: '¿Cuál es el más barato?' — RESPUESTA DEL COPILOTO.\n\nEl TopScan Pro ($350K) es el más accesible. PERO preguntar antes: '¿Para qué lo vas a usar principalmente?'\n\nSi es uso personal/ocasional: TopScan Pro es correcto.\nSi es para taller: 'El TopScan Pro es buena opción de entrada, pero si es para uso diario en taller, el CRP239 con pantalla táctil de 5 pulg te va a ser más cómodo y cubre los mismos 4 sistemas con mejor experiencia.'\n\nREGLA: No vender lo más barato por defecto. Vender lo que corresponde al uso real del cliente. Lo barato puede ser correcto o puede ser una mala inversión.",
+    "metadata": {
+      "producto_id": "objecion_barato",
+      "categoria": "objeciones",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": null,
+      "variante": null,
+      "tipo_fuente": "feedback_vendedor",
+      "certezza": "Media",
+      "semaforo": "verde"
+    }
+  }
+]

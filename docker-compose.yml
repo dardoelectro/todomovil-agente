@@ -1,0 +1,103 @@
+version: "3.9"
+
+services:
+  # ── Base de datos relacional ─────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: tm_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-todomovil}
+      POSTGRES_USER: ${POSTGRES_USER:-tm_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-tm_secure_2025}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/db/migrations:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-tm_user}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Base de datos vectorial ──────────────────────────────
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: tm_chromadb
+    restart: unless-stopped
+    environment:
+      CHROMA_SERVER_HOST: 0.0.0.0
+      CHROMA_SERVER_HTTP_PORT: 8001
+      ANONYMIZED_TELEMETRY: "FALSE"
+    volumes:
+      - chroma_data:/chroma/chroma
+    ports:
+      - "8001:8001"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/api/v1/heartbeat"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Backend FastAPI ──────────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: tm_backend
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-tm_user}:${POSTGRES_PASSWORD:-tm_secure_2025}@postgres:5432/${POSTGRES_DB:-todomovil}
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8001
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      chromadb:
+        condition: service_healthy
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # ── Frontend Next.js ─────────────────────────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: tm_frontend
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:8000
+    volumes:
+      - ./frontend/src:/app/src
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    command: npm run dev
+
+  # ── Nginx Reverse Proxy ──────────────────────────────────
+  nginx:
+    image: nginx:alpine
+    container_name: tm_nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - frontend
+      - backend
+
+volumes:
+  postgres_data:
+  chroma_data:

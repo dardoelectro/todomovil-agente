@@ -1,0 +1,136 @@
+[
+  {
+    "id": "mx900_general_info",
+    "content": "Autel MaxiDiag MX900 — Información general. Escáner de gama media. 7 sistemas: Motor, Transmisión, ABS, SRS, Dirección, Carrocería, Chasis. Funciones especiales: Reset aceite, EPB, SAS, DPF, IMMO, BMS, TPMS. PANTALLA: 8 pulgadas táctil. PROCESADOR: Quad-core. CONECTIVIDAD: WiFi + USB. ACTUALIZACIONES: 1 año incluido. IMMO = AMARILLO (función presente pero no confiable en todas las marcas/modelos). Bi-direccional: NO. Público objetivo: Taller especializado, electricista automotor que necesita más allá de los 4 sistemas básicos. SALTO DE GAMA vs CRP239: +3 sistemas (Dirección, Carrocería, Chasis), +4 funciones especiales (SAS, DPF, BMS, TPMS), pantalla mucho mejor.",
+    "metadata": {
+      "producto_id": "mx900",
+      "categoria": "scanner",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": null,
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "mx900_peugeot_208_motor",
+    "content": "Autel MX900 — Peugeot 208 (2013–2025) — Sistema: Motor. Lee y borra códigos, datos en tiempo real, pruebas activas limitadas. Cobertura completa para todas las motorizaciones: 1.6 VTi, 1.2 PureTech, 1.5 BlueHDi. Nivel de acceso: interactúa. ADVERTENCIA: No es bi-direccional, las pruebas activas son limitadas vs DS900.",
+    "metadata": {
+      "producto_id": "mx900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Peugeot",
+      "modelo_vehiculo": "208",
+      "anio_inicio": 2013,
+      "anio_fin": 2025,
+      "sistema": "Motor",
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "mx900_peugeot_208_direccion",
+    "content": "Autel MX900 — Peugeot 208 (2013–2025) — Sistema: Dirección asistida eléctrica (EPS). Lee y borra códigos de EPS. Permite calibración del sensor de ángulo de dirección (SAS reset). Nivel de acceso: interactúa. NOTA: El CRP239 NO cubre este sistema — ventaja clara del MX900.",
+    "metadata": {
+      "producto_id": "mx900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Peugeot",
+      "modelo_vehiculo": "208",
+      "anio_inicio": 2013,
+      "anio_fin": 2025,
+      "sistema": "Dirección",
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "mx900_peugeot_208_immo",
+    "content": "Autel MX900 — Peugeot 208 (2013–2025) — Función IMMO. SEMÁFORO AMARILLO. La función IMMO está presente en el MX900 pero NO es confiable en todas las marcas y modelos. En Peugeot con BSI, la programación de llaves puede fallar o quedar incompleta. ADVERTENCIA: Solo ofrecer con advertencia explícita al cliente. No garantizar que funcionará para programación de llaves. Para IMMO confiable se recomienda DS900 con acceso BSI completo.",
+    "metadata": {
+      "producto_id": "mx900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Peugeot",
+      "modelo_vehiculo": "208",
+      "anio_inicio": 2013,
+      "anio_fin": 2025,
+      "sistema": "IMMO",
+      "variante": null,
+      "tipo_fuente": "verificacion_manual",
+      "certezza": "Media",
+      "semaforo": "amarillo"
+    }
+  },
+  {
+    "id": "mx900_peugeot_208_bsi",
+    "content": "Autel MX900 — Peugeot 208 (2013–2025) — Sistema: BSI. Cobertura parcial. Puede leer códigos del BSI pero funciones de programación/coding son limitadas. Nivel de acceso: lee_codigos + interactúa (parcial). Para funciones completas de BSI (coding, adaptaciones) se requiere DS900.",
+    "metadata": {
+      "producto_id": "mx900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Peugeot",
+      "modelo_vehiculo": "208",
+      "anio_inicio": 2013,
+      "anio_fin": 2025,
+      "sistema": "BSI",
+      "variante": null,
+      "tipo_fuente": "verificacion_manual",
+      "certezza": "Media",
+      "semaforo": "amarillo"
+    }
+  },
+  {
+    "id": "mx900_renault_sandero_motor",
+    "content": "Autel MX900 — Renault Sandero (2007–2025) — Sistema: Motor. Lee y borra códigos, datos en tiempo real. Cobertura completa para todas las motorizaciones. Nivel de acceso: interactúa. Función DPF disponible para versiones diésel (si aplica mercado argentino).",
+    "metadata": {
+      "producto_id": "mx900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Renault",
+      "modelo_vehiculo": "Sandero",
+      "anio_inicio": 2007,
+      "anio_fin": 2025,
+      "sistema": "Motor",
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "mx900_vw_gol_motor",
+    "content": "Autel MX900 — Volkswagen Gol (2006–2025) — Sistema: Motor. Cobertura completa. Lee y borra códigos, datos en tiempo real, pruebas activas limitadas. Motorizaciones 1.6 EA111 VHT, 1.6 MSI, 1.0 MPI todas cubiertas.",
+    "metadata": {
+      "producto_id": "mx900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Volkswagen",
+      "modelo_vehiculo": "Gol",
+      "anio_inicio": 2006,
+      "anio_fin": 2025,
+      "sistema": "Motor",
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "mx900_fiat_cronos_motor",
+    "content": "Autel MX900 — Fiat Cronos (2018–2025) — Sistema: Motor. Cobertura completa. Motorizaciones 1.3 Firefly GSE y 1.8 E.torQ. Nivel de acceso: interactúa. NOTA: ECU Magneti Marelli del GSE puede requerir actualización reciente del equipo.",
+    "metadata": {
+      "producto_id": "mx900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Fiat",
+      "modelo_vehiculo": "Cronos",
+      "anio_inicio": 2018,
+      "anio_fin": 2025,
+      "sistema": "Motor",
+      "variante": null,
+      "tipo_fuente": "verificacion_manual",
+      "certezza": "Media",
+      "semaforo": "verde"
+    }
+  }
+]

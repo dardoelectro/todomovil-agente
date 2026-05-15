@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── TodoMovil Agente — Estilo autoelectrolab ────────── */
+
+@layer base {
+  body {
+    @apply bg-tm-bg text-tm-text font-sans;
+  }
+}
+
+@layer components {
+  /* ── Chat ──────────────────────────────────── */
+  .chat-container {
+    @apply max-w-4xl mx-auto h-screen flex flex-col;
+  }
+
+  .chat-header {
+    @apply bg-tm-card border-b border-tm-border px-6 py-4 flex items-center justify-between;
+  }
+
+  .chat-messages {
+    @apply flex-1 overflow-y-auto px-6 py-4 space-y-4;
+  }
+
+  .chat-input-area {
+    @apply bg-tm-card border-t border-tm-border px-6 py-4;
+  }
+
+  /* ── Message Bubbles ──────────────────────── */
+  .msg-bubble {
+    @apply max-w-[80%] rounded-2xl px-4 py-3 text-sm leading-relaxed;
+  }
+
+  .msg-user {
+    @apply bg-tm-accent2 text-white ml-auto rounded-br-sm;
+  }
+
+  .msg-assistant {
+    @apply bg-tm-card border border-tm-border text-tm-text mr-auto rounded-bl-sm;
+  }
+
+  /* ── Semáforo Badge ────────────────────────── */
+  .semaforo-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide;
+  }
+
+  .semaforo-verde {
+    @apply bg-tm-verde/20 text-tm-verde border border-tm-verde/30;
+  }
+
+  .semaforo-amarillo {
+    @apply bg-tm-amarillo/20 text-tm-amarillo border border-tm-amarillo/30;
+  }
+
+  .semaforo-rojo {
+    @apply bg-tm-rojo/20 text-tm-rojo border border-tm-rojo/30;
+  }
+
+  .semaforo-no-aplica {
+    @apply bg-tm-no_aplica/20 text-tm-no_aplica border border-tm-no_aplica/30;
+  }
+
+  /* ── Certeza Indicator ─────────────────────── */
+  .certeza-alta {
+    @apply text-tm-verde;
+  }
+
+  .certeza-media {
+    @apply text-tm-amarillo;
+  }
+
+  .certeza-baja {
+    @apply text-tm-rojo;
+  }
+
+  /* ── Product Card ──────────────────────────── */
+  .product-card {
+    @apply bg-tm-card border border-tm-border rounded-xl p-4 hover:border-tm-accent/50 transition-colors;
+  }
+
+  /* ── Botones ───────────────────────────────── */
+  .btn-primary {
+    @apply bg-tm-accent text-tm-bg font-bold px-6 py-2.5 rounded-lg hover:bg-tm-accent/90 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-tm-card border border-tm-border text-tm-text px-6 py-2.5 rounded-lg hover:border-tm-accent/50 transition-colors;
+  }
+
+  /* ── Input ─────────────────────────────────── */
+  .input-chat {
+    @apply bg-tm-bg border border-tm-border rounded-xl px-4 py-3 text-tm-text placeholder:text-tm-muted focus:outline-none focus:border-tm-accent/50 flex-1;
+  }
+}

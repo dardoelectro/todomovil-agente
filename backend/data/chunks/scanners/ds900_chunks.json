@@ -1,0 +1,168 @@
+[
+  {
+    "id": "ds900_general_info",
+    "content": "Autel MaxiDAS DS900 — Información general. Escáner de gama alta. 10+ sistemas: Motor, Transmisión, ABS, SRS, Dirección, Carrocería, Chasis, Confort, BSI, Infotainment. BI-DIRECCIONAL: SÍ — puede enviar comandos activos a los módulos. Funciones especiales: Coding, Adaptaciones, IMMO, EPB, SAS, DPF, BMS, TPMS, Injector coding, Throttle adaptation, Window initialize. PANTALLA: 9 pulgadas táctil capacitiva. PROCESADOR: Octa-core. CONECTIVIDAD: WiFi 5GHz + USB-C + HDMI. ACTUALIZACIONES: 1 año incluido. IMMO = AMARILLO (aunque más completo, sigue sin ser 100% confiable). BSI: Cobertura amplia con capacidad de coding. Público objetivo: Taller especializado de electricidad, servicio técnico profesional. SALTO DE GAMA vs MX900: Bi-direccional, +3 sistemas (Confort, BSI, Infotainment), Coding, Adaptaciones completas, pantalla premium.",
+    "metadata": {
+      "producto_id": "ds900",
+      "categoria": "scanner",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": null,
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "ds900_peugeot_208_motor",
+    "content": "Autel DS900 — Peugeot 208 (2013–2025) — Sistema: Motor. BI-DIRECCIONAL. Lee y borra códigos, datos en tiempo real, pruebas activas completas (injector coding, throttle adaptation, etc.). Cobertura total para todas las motorizaciones. Nivel de acceso: funciones_especiales. VENTAJA vs MX900: Pruebas activas reales, no solo lectura.",
+    "metadata": {
+      "producto_id": "ds900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Peugeot",
+      "modelo_vehiculo": "208",
+      "anio_inicio": 2013,
+      "anio_fin": 2025,
+      "sistema": "Motor",
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "ds900_peugeot_208_bsi",
+    "content": "Autel DS900 — Peugeot 208 (2013–2025) — Sistema: BSI. COBERTURA COMPLETA. Lee y borra códigos, coding de módulos BSI, adaptaciones, configuración de funciones. Nivel de acceso: funciones_especiales. Puede programar: cerraduras, luces, funciones de confort, config de llaves. VENTAJA CLAVE vs MX900: Acceso completo al BSI con capacidad de coding. NOTA: La programación de llaves IMMO a través del BSI tiene mejores resultados que en MX900, pero sigue siendo AMARILLO (no 100% garantizado).",
+    "metadata": {
+      "producto_id": "ds900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Peugeot",
+      "modelo_vehiculo": "208",
+      "anio_inicio": 2013,
+      "anio_fin": 2025,
+      "sistema": "BSI",
+      "variante": null,
+      "tipo_fuente": "verificacion_manual",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "ds900_peugeot_208_immo",
+    "content": "Autel DS900 — Peugeot 208 (2013–2025) — Función IMMO. SEMÁFORO AMARILLO. Aunque el DS900 tiene acceso completo al BSI y capacidad de programming de llaves, la función IMMO sigue sin ser 100% confiable. Resultados varían por: año del vehículo, versión de firmware BSI, cantidad de llaves ya programadas, y si se tiene el PIN code. ADVERTENCIA: Ofrecer SOLO con advertencia explícita. El DS900 tiene MEJORES resultados que MX900 y CRP239 para IMMO, pero no es garantía. Si el cliente necesita IMMO como función crítica, sugerir consultar con cerrajería automotriz especializada.",
+    "metadata": {
+      "producto_id": "ds900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Peugeot",
+      "modelo_vehiculo": "208",
+      "anio_inicio": 2013,
+      "anio_fin": 2025,
+      "sistema": "IMMO",
+      "variante": null,
+      "tipo_fuente": "verificacion_manual",
+      "certezza": "Media",
+      "semaforo": "amarillo"
+    }
+  },
+  {
+    "id": "ds900_peugeot_208_infotainment",
+    "content": "Autel DS900 — Peugeot 208 (2013–2025) — Sistema: Infotainment (SMEG/NAC). Acceso a módulo de radio/navegación. Coding de funciones de pantalla. Diagnóstico de problemas de pantalla táctil, Bluetooth, USB. Nivel de acceso: funciones_especiales. NOTA: CRP239 y MX900 NO cubren este sistema.",
+    "metadata": {
+      "producto_id": "ds900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Peugeot",
+      "modelo_vehiculo": "208",
+      "anio_inicio": 2013,
+      "anio_fin": 2025,
+      "sistema": "Infotainment",
+      "variante": null,
+      "tipo_fuente": "verificacion_manual",
+      "certezza": "Media",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "ds900_renault_sandero_motor",
+    "content": "Autel DS900 — Renault Sandero (2007–2025) — Sistema: Motor. BI-DIRECCIONAL. Pruebas activas completas. Injector coding disponible para motorizaciones 1.6 y 1.0 Turbo. Throttle body adaptation. Nivel de acceso: funciones_especiales.",
+    "metadata": {
+      "producto_id": "ds900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Renault",
+      "modelo_vehiculo": "Sandero",
+      "anio_inicio": 2007,
+      "anio_fin": 2025,
+      "sistema": "Motor",
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "ds900_renault_sandero_uch",
+    "content": "Autel DS900 — Renault Sandero (2007–2025) — Sistema: UCH (Unidad Central de Habitáculo, equivalente Renault del BSI). Acceso completo con coding. Configuración de cerraduras, luces, funciones de confort. Nivel de acceso: funciones_especiales. VENTAJA: CRP239 y TopScan Pro NO acceden al UCH. MX900 acceso parcial (lectura).",
+    "metadata": {
+      "producto_id": "ds900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Renault",
+      "modelo_vehiculo": "Sandero",
+      "anio_inicio": 2007,
+      "anio_fin": 2025,
+      "sistema": "UCH",
+      "variante": null,
+      "tipo_fuente": "verificacion_manual",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "ds900_vw_gol_motor",
+    "content": "Autel DS900 — Volkswagen Gol (2006–2025) — Sistema: Motor. BI-DIRECCIONAL. Pruebas activas: injector coding, throttle adaptation. Cobertura completa para todas las motorizaciones. Nivel de acceso: funciones_especiales.",
+    "metadata": {
+      "producto_id": "ds900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Volkswagen",
+      "modelo_vehiculo": "Gol",
+      "anio_inicio": 2006,
+      "anio_fin": 2025,
+      "sistema": "Motor",
+      "variante": null,
+      "tipo_fuente": "oficial_fabricante",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "ds900_fiat_cronos_motor",
+    "content": "Autel DS900 — Fiat Cronos (2018–2025) — Sistema: Motor. BI-DIRECCIONAL. Pruebas activas completas. Injector coding para motorizaciones GSE y E.torQ. Throttle adaptation. Nivel de acceso: funciones_especiales. NOTA: ECU Magneti Marelli — requiere versión actualizada del firmware Autel.",
+    "metadata": {
+      "producto_id": "ds900",
+      "categoria": "scanner",
+      "marca_vehiculo": "Fiat",
+      "modelo_vehiculo": "Cronos",
+      "anio_inicio": 2018,
+      "anio_fin": 2025,
+      "sistema": "Motor",
+      "variante": null,
+      "tipo_fuente": "verificacion_manual",
+      "certezza": "Media",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "ds900_codigo_falla_link",
+    "content": "Autel DS900 — Campo código_falla. Cuando el DS900 detecta un código de falla (ej: P0171 — Mezcla pobre en banco 1), el Agente puede sugerir herramientas de medición complementarias: 1) Multímetro — medir tensión en sensor MAF/O2, 2) Osciloscopio — visualizar forma de onda de sensor O2, 3) Punta lógica — verificar señal digital en inyector. El campo código_falla es el LINK entre escáneres y herramientas de medición. Ejemplo: P0171 → verificar con osciloscopio la señal del sensor O2 banco 1 sensor 1.",
+    "metadata": {
+      "producto_id": "ds900",
+      "categoria": "scanner",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": "codigo_falla",
+      "variante": null,
+      "tipo_fuente": "verificacion_manual",
+      "certezza": "Alta",
+      "semaforo": "verde"
+    }
+  }
+]

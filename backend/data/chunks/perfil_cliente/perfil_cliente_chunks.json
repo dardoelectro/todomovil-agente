@@ -1,0 +1,47 @@
+[
+  {
+    "id": "perfil_mecanico_general",
+    "content": "PERFIL DE CLIENTE — Mecánico General. Necesita: lectura básica de códigos, reset de service, borrado de luz ABS/SRS. Trabaja con todas las marcas pero no especializado. Presupuesto limitado. PRODUCTO RECOMENDADO: CRP239 (gama entrada) — cubre sus 4 sistemas principales, pantalla táctil intuitiva, WiFi actualizaciones. ALTERNATIVA ECONÓMICA: TopScan Pro si presupuesto es muy ajustado. NO ofrecer MX900/DS900 — son exceso para su necesidad. OBJECIÓN COMÚN: 'Es muy caro' → Mostrar valor: 'Cubrí los 4 sistemas que usás diario, se paga solo con 3 diagnósticos.'",
+    "metadata": {
+      "producto_id": "perfil_mecanico_general",
+      "categoria": "perfil_cliente",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": null,
+      "variante": null,
+      "tipo_fuente": "feedback_vendedor",
+      "certezza": "Media",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "perfil_electricista_automotor",
+    "content": "PERFIL DE CLIENTE — Electricista Automotor. Necesita: acceso a más sistemas (dirección, carrocería), funciones especiales (SAS, DPF, BMS), capacidad de interacción con módulos. Trabaja con marcas francesas (Peugeot, Renault) que tienen BSI/UCH. PRODUCTO RECOMENDADO: MX900 (gama media) — cubre 7 sistemas, funciones especiales amplias, acceso parcial a BSI. ALTERNATIVA PREMIUM: DS900 si necesita bi-direccional y coding completo. OBJECIÓN COMÚN: 'El CRP239 me alcanza' → Mostrar diferencia: 'Te faltan Dirección, Carrocería y Chasis. Y el BSI parcial que en Peugeot/Renault es clave.'",
+    "metadata": {
+      "producto_id": "perfil_electricista",
+      "categoria": "perfil_cliente",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": null,
+      "variante": null,
+      "tipo_fuente": "feedback_vendedor",
+      "certezza": "Media",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "perfil_taller_especializado",
+    "content": "PERFIL DE CLIENTE — Taller Especializado / Servicio Técnico. Necesita: bi-direccional, coding, adaptaciones, BSI completo, IMMO (con advertencia), injector coding. Diagnóstico profesional completo. PRODUCTO RECOMENDADO: DS900 (gama alta) — bi-direccional, 10+ sistemas, coding, adaptaciones. Es la herramienta de trabajo profesional. OBJECIÓN COMÚN: 'Es mucha plata' → Mostrar ROI: 'Un solo trabajo de coding BSI o adaptación de inyectores ya cubre la diferencia con el MX900. Además tenés bi-direccional que te ahorra pruebas manuales.'",
+    "metadata": {
+      "producto_id": "perfil_taller_especializado",
+      "categoria": "perfil_cliente",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": null,
+      "variante": null,
+      "tipo_fuente": "feedback_vendedor",
+      "certezza": "Media",
+      "semaforo": "verde"
+    }
+  }
+]

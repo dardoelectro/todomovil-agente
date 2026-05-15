@@ -1,0 +1,32 @@
+[
+  {
+    "id": "medicion_multimetro_general",
+    "content": "Herramientas de Medición — Información general. TodoMovil comercializa herramientas de medición para diagnóstico automotor. Tipos: 1) MULTÍMETRO — mide tensión (V), corriente (A), resistencia (Ω), continuidad, frecuencia. Usado para verificar sensores (MAF, TPS, CKP, CMP), cables, batería, alternador. 2) OSCILOSCOPIO — visualiza formas de onda de señales eléctricas. Usado para analizar señales de sensores (CKP, CMP, O2, CAN bus), inyectores, bobinas de encendido. 3) PUNTA LÓGICA — detecta estados lógicos (HIGH/LOW/PULSE) en líneas digitales. Usado para verificar señales CAN, LIN, PWM. RELACIÓN CON ESCÁNERES: El escáner dice QUÉ falla (código), la herramienta de medición dice POR QUÉ falla (señal). El campo código_falla en el escáner LINKA a la herramienta de medición recomendada.",
+    "metadata": {
+      "producto_id": "medicion_general",
+      "categoria": "medicion",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": null,
+      "variante": null,
+      "tipo_fuente": "verificacion_manual",
+      "certezza": "Media",
+      "semaforo": "verde"
+    }
+  },
+  {
+    "id": "medicion_codigo_falla_p0171",
+    "content": "Código de falla P0171 — Mezcla pobre banco 1. ESCÁNER: Detecta el código, muestra fuel trim. MEDICIÓN RECOMENDADA: 1) Multímetro → medir tensión en sensor MAF (debería ser ~0.5-4.5V según flujo), 2) Osciloscopio → visualizar señal del sensor O2 banco 1 sensor 1 (debería oscilar entre 0.1-0.9V), 3) Multímetro → medir resistencia del inyector (debería ser 12-16Ω). SECUENCIA: Scanner da P0171 → Verificar O2 con osciloscopio → Si O2 trabado, verificar MAF con multímetro → Si MAF ok, verificar inyectores.",
+    "metadata": {
+      "producto_id": "medicion_codigo_falla",
+      "categoria": "medicion",
+      "marca_vehiculo": null,
+      "modelo_vehiculo": null,
+      "sistema": "codigo_falla",
+      "variante": null,
+      "tipo_fuente": "verificacion_manual",
+      "certezza": "Media",
+      "semaforo": "verde"
+    }
+  }
+]
