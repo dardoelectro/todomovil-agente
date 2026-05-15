@@ -1,5 +1,5 @@
-"""
-TodoMovil Agente CRM — Configuración centralizada
+﻿"""
+TodoMovil Agente CRM — Configuracion centralizada
 Lee variables de entorno con valores por defecto.
 """
 
@@ -14,16 +14,14 @@ class Settings(BaseSettings):
     # ── ChromaDB ──────────────────────────────────────────
     CHROMA_HOST: str = "localhost"
     CHROMA_PORT: int = 8001
+    # NOTA: Las embeddings las maneja el servidor ChromaDB automaticamente.
+    # Modelo default del servidor: all-MiniLM-L6-v2 (via onnxruntime)
 
     # ── LLM ──────────────────────────────────────────────
     ZAI_API_KEY: str = ""
     LLM_MODEL: str = "glm-4"
     LLM_TEMPERATURE: float = 0.3
     LLM_MAX_TOKENS: int = 2048
-
-    # ── Embeddings ────────────────────────────────────────
-    EMBEDDING_MODEL: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-    EMBEDDING_DIMENSION: int = 384
 
     # ── FastAPI ───────────────────────────────────────────
     API_HOST: str = "0.0.0.0"

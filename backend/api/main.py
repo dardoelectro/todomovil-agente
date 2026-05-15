@@ -1,4 +1,4 @@
-"""
+﻿"""
 TodoMovil Agente CRM — Backend FastAPI
 Punto de entrada principal de la API.
 """
@@ -10,7 +10,7 @@ from core.config import settings
 
 app = FastAPI(
     title="TodoMovil Agente CRM",
-    description="API del copiloto del vendedor — RAG + Semáforo + Certeza",
+    description="API del copiloto del vendedor — RAG + Semaforo + Certeza",
     version="0.1.0",
     docs_url="/docs",
     redoc_url="/redoc",
@@ -19,7 +19,7 @@ app = FastAPI(
 # ── CORS ──────────────────────────────────────────────────
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.CORS_ORIGINS,
+    allow_origins=settings.cors_origins_list,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

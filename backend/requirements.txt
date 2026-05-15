@@ -8,13 +8,6 @@ sqlalchemy==2.0.35
 psycopg2-binary==2.9.9
 alembic==1.13.2
 
-# ── ChromaDB ──────────────────────────────────────────────
-chromadb==0.5.5
-
-# ── Embeddings ────────────────────────────────────────────
-sentence-transformers==3.0.1
-# torch se instala desde Dockerfile version CPU-only (sin CUDA)
-
 # ── Utilidades ────────────────────────────────────────────
 pydantic==2.9.2
 pydantic-settings==2.5.2
@@ -26,3 +19,8 @@ python-dotenv==1.0.1
 # ── Tests ────────────────────────────────────────────────
 pytest==8.3.3
 pytest-asyncio==0.24.0
+
+# NOTA: chromadb, sentence-transformers y torch NO se necesitan.
+# ChromaDB corre como servidor separado (contenedor propio).
+# El backend se comunica via REST API con httpx.
+# Las embeddings las computa el servidor ChromaDB automaticamente.
