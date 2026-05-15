@@ -1,6 +1,4 @@
-version: "3.9"
-
-services:
+﻿services:
   # ── Base de datos relacional ─────────────────────────────
   postgres:
     image: postgres:16-alpine
@@ -13,8 +11,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./backend/db/migrations:/docker-entrypoint-initdb.d
-    ports:
-      - "5432:5432"
+    # NO exponemos 5432 al host — solo acceso interno entre contenedores
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-tm_user}"]
       interval: 10s
@@ -32,8 +29,7 @@ services:
       ANONYMIZED_TELEMETRY: "FALSE"
     volumes:
       - chroma_data:/chroma/chroma
-    ports:
-      - "8001:8001"
+    # NO exponemos 8001 al host — solo acceso interno
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8001/api/v1/heartbeat"]
       interval: 10s
@@ -56,7 +52,7 @@ services:
     volumes:
       - ./backend:/app
     ports:
-      - "8000:8000"
+      - "127.0.0.1:8000:8000"   # Solo localhost — Nginx del host hace proxy
     depends_on:
       postgres:
         condition: service_healthy
@@ -78,25 +74,10 @@ services:
     volumes:
       - ./frontend/src:/app/src
     ports:
-      - "3000:3000"
+      - "127.0.0.1:3000:3000"   # Solo localhost — Nginx del host hace proxy
     depends_on:
       - backend
     command: npm run dev
-
-  # ── Nginx Reverse Proxy ──────────────────────────────────
-  nginx:
-    image: nginx:alpine
-    container_name: tm_nginx
-    restart: unless-stopped
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./nginx/ssl:/etc/nginx/ssl:ro
-    depends_on:
-      - frontend
-      - backend
 
 volumes:
   postgres_data:
